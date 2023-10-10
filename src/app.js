@@ -11,14 +11,14 @@ const PLAYERS = [
     "Captain",
     "Catwoman",
     "Fish",
-    "mad Hulk",
-    "Dead Pool",
+    "Hulk",
+    "Ninja",
     "Black Cat",
-    "Evil Strange",
-    "hammer",
-    "She Hulk",
-    "Wasp",
-    "Thanos"
+    "Volverine",
+    "Thor",
+    "Slayer",
+    "Vader",
+    "Slingo"
 ];
 
 // initialize players with image and strength
@@ -47,7 +47,7 @@ const buildPlayers = (players, type) => {
 }
 // Display players in HTML
 const viewPlayers = (players) => {
- 
+
     document.getElementById('heroes').innerHTML = buildPlayers(players, 'hero');
     document.getElementById('villains').innerHTML = buildPlayers(players, 'villain');
 
@@ -55,6 +55,4 @@ const viewPlayers = (players) => {
 
 window.onload = () => {
     viewPlayers(initPlayers(PLAYERS));
-    // console.log(viewPlayers(initPlayers(PLAYERS)))
-    // viewPlayers(buildPlayers(detailedPlayers,detailedPlayers.type));
 }
